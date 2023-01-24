@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorAnadir">
+   <children>
+      <Label layoutX="121.0" layoutY="59.0" text="Nombre:" />
+      <Label layoutX="121.0" layoutY="141.0" text="Apellido:" />
+      <Label layoutX="121.0" layoutY="209.0" text="Edad:" />
+      <TextField fx:id="txtnombre" layoutX="116.0" layoutY="86.0" />
+      <TextField fx:id="txtapellido" layoutX="121.0" layoutY="164.0" />
+      <TextField fx:id="txtedad" layoutX="121.0" layoutY="236.0" />
+      <Button fx:id="btnagregar" layoutX="135.0" layoutY="290.0" mnemonicParsing="false" onAction="#agregar" prefHeight="39.0" prefWidth="184.0" text="Agregar" />
+      <Button fx:id="btnmodificar" layoutX="137.0" layoutY="336.0" mnemonicParsing="false" onAction="#modificar" prefHeight="39.0" prefWidth="184.0" text="Modificar" />
+      <Button fx:id="btneliminar" layoutX="137.0" layoutY="387.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="39.0" prefWidth="184.0" text="Eliminar" />
+      <ImageView fitHeight="70.0" fitWidth="138.0" layoutX="384.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/imf.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnbuscar" layoutX="137.0" layoutY="435.0" mnemonicParsing="false" onAction="#buscar" prefHeight="39.0" prefWidth="184.0" text="Buscar" />
+   </children>
+</AnchorPane>
